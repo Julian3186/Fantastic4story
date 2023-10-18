@@ -6,5 +6,6 @@
 import Foundation
 
 func chapterTwo() {
-    // Your portion of the story goes here
+        print("David and Ethan finally arrived at the stadium and Ethan could barely contain his excitement as the where entering the game")
+        
 }
