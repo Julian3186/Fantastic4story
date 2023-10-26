@@ -24,8 +24,8 @@ func currentWeather () {
         
     } else if weatherConditions == "Rainy" {
         print("it was raining cats and dogs so \(fathersName) told \(sonsName) to grab the ponchos. \(fathersName) wasn't going to let a anything get in the way of the day him and \(mothersName) had planned")
-    
-}
+        
+    }
 }
 
 
@@ -33,11 +33,11 @@ func currentWeather () {
 
 func chapterTwo() {
     // Your portion of the story goes here
-
+    
     print("Happily \(fathersName) kisses \(mothersName) on the cheek, tells her he loves her")
     print("then turns to \(sonsName) ask him if he is ready, \(fathersName) grab his hand and exits their home")
     print("On the porch \(fathersName) looks up and to his surpise")
-
+    
     weatherConditions = "Sunny"
     currentWeather()
     
@@ -48,9 +48,9 @@ func chapterTwo() {
     print("He sprinted down the field, leaping high into the air, and came down with a miraculous one handed catch for the winning touchdown.")
     print("The stadium erupted as \(fathersName) and \(sonsName)  hugged tightly, jumping up and down with joy.")
     print("\(sonsName) would never forget this moment – the thrill of the last-second win, the shared joy with his father, and the unforgettable day they spent together.")
-
-
-
-
+    
+    
+    
+    
     
 }
