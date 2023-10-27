@@ -10,15 +10,12 @@
 
 import Foundation
 
-let fathersName = "Kevin"
-let sonsName = "David"
-let mothersName = "Marsha"
 
 let event = "Football Game"
-var weatherConditions = "Sunny"
+var weatherConditions = "Rainy"
 
 
-func currentWeather () {
+func currentWeather (weatherConditions: String) {
     if weatherConditions == "Sunny" {
         print("the sun was shining on this crisp fall morning and \(fathersName) thought to himself what a wonderful day for some football")
         
@@ -38,8 +35,10 @@ func chapterTwo() {
     print("then turns to \(sonsName) ask him if he is ready, \(fathersName) grab his hand and exits their home")
     print("On the porch \(fathersName) looks up and to his surpise")
     
-    weatherConditions = "Sunny"
-    currentWeather()
+//    weatherConditions = "Sunny"
+    currentWeather(weatherConditions: weatherConditions)
+    currentWeather(weatherConditions: "Rainy")
+    currentWeather(weatherConditions: "Thunderstorm")
     
     print("As they got closer \(sonsName) could see the stadium in the distance, \(sonsName) couldn't help but stare in awe, it was an overwhelming experience for the young boy.")
     print("\(fathersName) led \(sonsName) to their seats, which were strategically chosen to provide the best view of the field. The roar of the crowd filled the air, and the atmosphere was electric.")

@@ -4,6 +4,10 @@
 //
 
 import Foundation
+let fathersName = "Kevin"
+let sonsName = "David"
+let mothersName = "Marsha"
+
 
 func readStory() {
     chapterOne()
