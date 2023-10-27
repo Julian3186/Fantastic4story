@@ -309,7 +309,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = BU2VGPU5X8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gicentroyhenry.Fantastic4story;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,7 +322,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = BU2VGPU5X8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gicentroyhenry.Fantastic4story;
 				PRODUCT_NAME = "$(TARGET_NAME)";
