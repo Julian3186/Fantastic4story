@@ -9,12 +9,12 @@ let sonsName = "David"
 let mothersName = "Marsha"
 
 
-func readStory() {
-    chapterOne()
-    chapterTwo()
-    chapterThree()
+//func readStory() {
+//    chapterOne()
+//    chapterTwo()
+//    chapterThree()
     chapterFour()
     chapterFive()
-}
+//}
 
-readStory()
+//readStory()
