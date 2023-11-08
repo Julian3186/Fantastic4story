@@ -9,6 +9,7 @@
 
 
 import Foundation
+
 struct FamilyNames {
     let dad: String
     let mom: String
@@ -29,15 +30,24 @@ var gearForRain = ["poncho", "rain boots", "umbrella"]
 enum Weather: CaseIterable {
     case sunny, rainy
 }
+
+
 //var weatherConditions = "Sunny" Varible that may change based the desired weather wantde to print
-var weatherConditions = Weather.allCases.randomElement()!
+//var weatherConditions = Weather.allCases.randomElement()! // DO NOT FORCE - Figure out another way to unwrap
 
 
-//FUNCTION for weather
+
+//FUNCTION for weather with random element for sunny an a shuffle for rain gear
 func currentWeather (weatherConditions: Weather) {
     if weatherConditions == .sunny {
-        let item = gearForSun.randomElement()!
-        
+//        let item = gearForSun.randomElement()! // DO NOT FORCE - Figure out another way to unwrap
+       
+        guard let item = gearForSun.randomElement()
+            else {
+            print("their belongings")
+            return
+        }
+//        
         print("the sun was shining on this crisp fall morning, so \(myFamily.dad) went to the closet to gathered \(item) as he thought to himself what a wonderful day for some football")
         
 // added an ELSE IF statement for raining weather
@@ -118,7 +128,14 @@ func currentWeather (weatherConditions: Weather) {
         
     //currentWeather: is the name of the function.
     //weatherConditions: Is the parameter being passed to the currentWeather function. Also is a variable name, that correspond to the variable of same type.
-        currentWeather(weatherConditions: weatherConditions)
+        let weatherConditions: Weather? = Weather.allCases.randomElement()
+        
+        if let unwrappedWeatherConditions = weatherConditions {
+            currentWeather(weatherConditions: unwrappedWeatherConditions)
+        } else {
+            print("it was cloudy.")
+        }
+           
     }
 
     func gameTime() {
@@ -131,7 +148,6 @@ func currentWeather (weatherConditions: Weather) {
         currentScore(homeTeamScore: homeScore, awayTeamScore: awayScore)
     }
 
-   // Add a function for the s
 
     func finalPlay() {
         print("Time for one final play, the center hiked the ball the QB dropped back, dodged the pass rush, then hurled a bomb of a pass towards toward the endzone, as  \(favoritePlayer) sprinted down the field")
